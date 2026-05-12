@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-fundo-claro);
     font-family: var(--fonte-principal);
 }
 
