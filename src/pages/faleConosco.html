@@ -12,18 +12,15 @@ Responsável: PIETRO
     <title>Contato</title>
 
     <!-- Sempre Linkar primeiro o CSS GLOBAL -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Linkar os CSS específicos para cada seção -->
-
-    
-    <!-- Pietro, depois ajustes os links! -->
-    <link rel="stylesheet" href="../fale-conosco/src/css/style.css">
+    <link rel="stylesheet" href="../css/styleFaleConosco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet"> 
+        rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +33,7 @@ Responsável: PIETRO
 
     </header>
 
-    
+
     <!-- ==============================
     SEÇÃO: MAIN
     Responsável: PIETRO
@@ -47,63 +44,65 @@ Responsável: PIETRO
             <h1>Central de Ajuda AgroTech</h1>
         </section>
 
+        <!-- 
+    <section class="faq-contato">
+        <h2>Perguntas Frequentes</h2>
+        <div class="perguntas-faq-contato">
+            <details>
+                <summary>O que é a AgroTech?</summary>
+                <p>A AgroTech é uma plataforma voltada para soluções no agronegócio.</p>
+            </details>
 
-        <section class="faq-contato">
-            <h2>Perguntas Frequentes</h2>
-            <div class="perguntas-faq-contato">
-                <details>
-                    <summary>O que é a AgroTech?</summary>
-                    <p>A AgroTech é uma plataforma voltada para soluções no agronegócio.</p>
-                </details>
+            <details>
+                <summary>Como posso entrar em contato?</summary>
+                <p>Você pode acessar a página de contato ou enviar um e-mail para suporte@agrotech.com.</p>
+            </details>
 
-                <details>
-                    <summary>Como posso entrar em contato?</summary>
-                    <p>Você pode acessar a página de contato ou enviar um e-mail para suporte@agrotech.com.</p>
-                </details>
+            <details>
+                <summary>Os serviços são pagos?</summary>
+                <p>Oferecemos planos gratuitos e pagos, dependendo da necessidade.</p>
+            </details>
 
-                <details>
-                    <summary>Os serviços são pagos?</summary>
-                    <p>Oferecemos planos gratuitos e pagos, dependendo da necessidade.</p>
-                </details>
+            <details>
+                <summary>Posso usar no celular?</summary>
+                <p>Sim, a plataforma é totalmente responsiva.</p>
+            </details>
+        </div>
+    </section>
 
-                <details>
-                    <summary>Posso usar no celular?</summary>
-                    <p>Sim, a plataforma é totalmente responsiva.</p>
-                </details>
-            </div>
-        </section>
-
-
+-->
 
         <section class="fale-conosco">
             <h2>Fale Conosco</h2>
 
             <div class="container-form">
 
-                <form action="">
+                <form action="" id="formulario">
                     <div class="linha">
                         <div>
                             <label>Nome Completo:</label>
-                            <input type="text" class="input-fale">
+                            <input type="text" class="input-fale" placeholder="Ex: João Gomes" id="nome-completo">
                         </div>
 
                         <div>
                             <label>E-mail:</label>
-                            <input type="email" class="input-fale">
+                            <input type="email" class="input-fale" placeholder="example@gmail.com" id="email">
                         </div>
                     </div>
                     <div>
                         <label>Mensagem:</label>
-                        <textarea class="input-fale" rows="4" required></textarea>
+                        <textarea class="input-fale" rows="4" id="mensagem"></textarea>
                     </div>
                     <div class="file-upload">
                         <label for="arquivo">Anexar Arquivo:</label>
                         <input type="file" id="arquivo">
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="button" id="btn" onclick="EnviaForm()">Enviar</button>
+
+                    <p id="erro" class="hidden"></p>
                 </form>
                 <div class="imagem-form">
-                    <img src="../fale-conosco/src/img/agrotech.png" alt="Contato">
+                    <img src="../img/agrotech.png" alt="Contato">
                 </div>
 
             </div>
@@ -118,7 +117,8 @@ Responsável: PIETRO
     <footer>
 
     </footer>
-    
+
 </body>
+<script src="../js/scriptFaleConosco.js"></script>
 
 </html>
