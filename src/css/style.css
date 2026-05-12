@@ -1,10 +1,29 @@
 /* Style GLOBAL, deve ter root, reset, body, header, footer */
 
 /* ROOT > Variáveis Globais do Projeto */
+:root {
+    /* Cores */
+    --cor-primaria: #059B9A;
+    --cor-secundaria:#FFF;
+    --cor-texto: #0C0636;
+    --cor-fundo-claro: #f5f5f5;
+    --cor-hover: #dff0df;
+    --cor-borda-suave: #eaf5ea;
+
+    /* Fontes */
+    --fonte-principal: "Open Sans", sans-serif;
+    --fonte-titulo: "Montserrat", sans-serif;
+}
 
 
 /* RESET */
 
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--cor-texto);
+}
 
 /* BODY */
 
