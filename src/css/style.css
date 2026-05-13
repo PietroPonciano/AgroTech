@@ -53,6 +53,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--fonte-principal);
 }
 
 main {
@@ -79,8 +80,6 @@ header {
   padding: 1.25rem 5vw;
   border-bottom: 2px solid var(--cor-borda-cinza);
 }
-
-
 
 .nav-logo {
   font-family: var(--fonte-titulo);
