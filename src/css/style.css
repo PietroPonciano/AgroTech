@@ -68,10 +68,19 @@ a {
 
 
 /* Etilos da navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--cor-fundo-claro);
+}
+
 .navbar-container {
   padding: 1.25rem 5vw;
   border-bottom: 2px solid var(--cor-borda-cinza);
 }
+
+
 
 .nav-logo {
   font-family: var(--fonte-titulo);
