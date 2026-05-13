@@ -78,3 +78,68 @@
     font-size: 0.75rem;
     color: var(--texto-branco-medio);
 }
+
+/* PROBLEMAS > Bruh Section */
+/* Responsável: ESTEVÃO */
+
+/* Estilos do bruh */
+
+/*div {
+    border: 1px solid #000;
+}*/
+
+.bruh-intro {
+    display: flex;
+    gap: 10px;
+    flex-flow: column;
+    margin-left: 6%;
+    margin-right: 4.5%;
+}
+
+.bruh-title {
+    font: var(--fonte-titulo);
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 2rem, 0;
+}
+
+.bruh-subtitle {
+    font: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+    padding: 1.5rem, 0;
+}
+
+.bruh-section-cards {
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 400px;
+    border-radius: 15px;
+    background-color: var(--cor-destaque);
+}
+
+.bruh-card{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    width: 250px;
+    height: 350px;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: var(--cor-destaque);
+}
+
+.bruh-card img {
+    width: 190px;
+}
+
+.bruh-card .bruh-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+}
+
+.bruh-card p {
+    color: var(--cor-secundaria);
+}
