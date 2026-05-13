@@ -4,8 +4,77 @@
 
 /* Lembre sempre de conferir o CSS GLOBAL 'style.css' */
 
-/* HOME > Seção de Apresentação do Projeto */
+/* HOME > Hero Section */
 /* Responsável: MATHEUS */
 
 
+/* Estilos do Hero */
 
+.hero-section {
+    padding: 5rem 5vw;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 800;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.hero-text {
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
+
+.hero-img {
+    border-radius: 12px;
+    border: 3px solid var(--cor-secundaria);
+    box-shadow: 6px 6px 0px var(--cor-secundaria);
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: var(--cor-secundaria);
+    transform: translateY(-2px);
+}
+
+.hero-btn-icon {
+    color: var(--texto-branco-puro);
+    font-size: 2rem;
+}
+
+.hero-btn-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-btn-titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--texto-branco-puro);
+}
+
+.hero-btn-subtitulo {
+    font-size: 0.75rem;
+    color: var(--texto-branco-medio);
+}

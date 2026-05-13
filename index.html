@@ -35,7 +35,7 @@
          Responsável: MATHEUS
         ================================= -->
     <header>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
 
             <div class="container-fluid navbar-container">
 
@@ -48,7 +48,7 @@
                 </button>
 
                 <div id="paginas" class="collapse navbar-collapse justify-content-end">
-                    <ul class="d-flex flex-column flex-md-row gap-4 list-unstyled mb-0 align-items-center align-items-md-center mt-5 mt-md-0">
+                    <ul class="d-flex flex-column flex-lg-row gap-4 list-unstyled mb-0 align-items-center align-items-lg-center mt-5 mt-lg-0">
 
                         <li><a href="./index.html" class="page page-active text-nowrap">Home</a></li>
                         <li><a href="./src/pages/solucoes.html" class="page text-nowrap">Solução</a></li>
@@ -68,11 +68,46 @@
     <main>
 
         <!-- ==============================
-             SEÇÃO: HOME
+             SEÇÃO: HOME (HERO)
              Responsável: MATHEUS
             ================================= -->
-        <section>
+        <section class="hero-section">
+            <div class="row align-items-center justify-content-around gy-5 container-fluid">
 
+                <div class="col-12 col-lg-6 d-flex flex-column gap-3 text-center">
+                    <h1 class="hero-title">AgroTech</h1>
+                    <h2 class="hero-subtitle">Tecnologia que cabe na palma da mão do pequeno produtor.</h2>
+                    <p class="hero-text">O AgroTech é um assistente agrícola digital feito para pequenos produtores rurais e agricultores familiares.
+                        Ajudamos no planejamento de plantio, monitoramento climático e gestão da produção — simples, acessível e pensado para o campo brasileiro.
+                    </p>
+
+                    <!-- Esse botao so aparece com a tela grande -->
+                    <a href="#linkDoPitch" class="hero-btn align-self-stretch justify-content-center d-none d-lg-flex">
+                        <i class="bi bi-play-circle-fill hero-btn-icon"></i>
+                        <div class="hero-btn-texto">
+                            <span class="hero-btn-titulo">Pitch Vídeo</span>
+                            <span class="hero-btn-subtitulo">Conheça a navegabilidade do nosso site</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <img src="./src/img/hero-section-Agricultor.jpg" alt="Agricultor segurando um tablet no campo" class="hero-img w-100">
+                </div>
+
+
+                <!-- Esse botao so aparece quando a tela fica pequena -->
+                <div class="col-12 d-flex flex-column d-lg-none">
+                    <a href="#linkDoPitch" class="hero-btn align-self-stretch justify-content-center">
+                        <i class="bi bi-play-circle-fill hero-btn-icon"></i>
+                        <div class="hero-btn-texto">
+                            <span class="hero-btn-titulo">Pitch Vídeo</span>
+                            <span class="hero-btn-subtitulo">Conheça a navegabilidade do nosso site</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
         <!-- ==============================
@@ -92,9 +127,9 @@
     <footer>
         <div class="container-fluid footer-container">
 
-            <div class="row gy-4 gx-4 justify-content-md-between">
+            <div class="row gy-4 gx-4 justify-content-lg-between">
 
-                <div class="col-12 col-md-auto footer-agrotech text-center text-md-start">
+                <div class="col-12 col-lg footer-agrotech text-center">
 
                     <a href="./index.html" class="footer-logo">
                         <span class="footer-logo-agro">Agro</span><span class="footer-logo-tech">Tech</span>
@@ -106,8 +141,8 @@
 
                 </div>
 
-                <div class="col-12 col-md-auto footer-navegacao-col">
-                    <nav class="footer-navegacao d-flex flex-column align-items-center align-items-md-start" aria-label="Links do rodapé">
+                <div class="col-12 col-lg footer-navegacao-col">
+                    <nav class="footer-navegacao d-flex flex-column align-items-center" aria-label="Links do rodapé">
                         <p class="footer-titulo">NAVEGAÇÃO</p>
                         <a href="./index.html" class="footer-navegacao-pagina footer-texto-fraco">Home</a>
                         <a href="./src/pages/solucoes.html" class="footer-navegacao-pagina footer-texto-fraco">Solução</a>
@@ -116,10 +151,10 @@
                     </nav>
                 </div>
 
-                <div class="col-12 col-md-auto footer-pitch text-center text-md-start">
+                <div class="col-12 col-lg footer-pitch text-center">
                     <p class="footer-pitch-titulo footer-titulo mb-3">PITCH VÍDEO</p>
 
-                    <a href="#linkDoPitch" class="footer-pitch-link d-flex align-items-center text-decoration-none justify-content-center justify-content-md-start">
+                    <a href="#linkDoPitch" class="footer-pitch-link d-flex align-items-center text-decoration-none justify-content-center">
                         <i class="bi bi-play-circle-fill"></i>
                         <div class="d-flex flex-column text-start">
                             <p class="footer-texto-medio mb-1 fw-bold">Assista ao nosso pitch</p>
@@ -128,7 +163,7 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-auto footer-equipe text-center text-md-start">
+                <div class="col-12 col-lg footer-equipe text-center">
                     <p class="footer-titulo mb-3">EQUIPE 1ESOB — FIAP 2026</p>
                     <ul class="list-unstyled footer-texto-fraco">
                         <li class="mb-1">Estevão Nunes Gabriel — RM571413</li>
@@ -142,7 +177,7 @@
             </div>
 
             <div class="row border-top mt-3 pt-3">
-                <div class="col-12 text-center text-md-start">
+                <div class="col-12 text-center">
                     <p class="footer-copyright footer-texto-fraco">© 2026 AgroTech · Projeto acadêmico FIAP — todos os direitos reservados.</p>
                 </div>
             </div>
