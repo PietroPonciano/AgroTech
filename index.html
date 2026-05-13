@@ -9,10 +9,10 @@
      Responsável: MATHEUS e ESTEVÃO
     ================================= -->
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTech</title>
+    <title>AgroTech - Home</title>
 
     <!-- Import do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,54 +31,54 @@
 <body>
 
     <!-- ==============================
-     SEÇÃO: HEADER
-     Responsável: MATHEUS
-    ================================= -->
-<header>
-    <nav class="navbar navbar-expand-md">
-        
-        <div class="container-fluid navbar-container">
+         SEÇÃO: HEADER
+         Responsável: MATHEUS
+        ================================= -->
+    <header>
+        <nav class="navbar navbar-expand-md">
 
-            <h1 class="nav-logo mb-0">
-                <span class="logo-agro">Agro</span><span class="logo-tech">Tech</span>
-            </h1>
+            <div class="container-fluid navbar-container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#paginas">
-                <i class="bi bi-list"></i>
-            </button>
+                <div class="nav-logo mb-0">
+                    <span class="nav-logo-agro">Agro</span><span class="nav-logo-tech">Tech</span>
+                </div>
 
-            <div id="paginas" class="collapse navbar-collapse justify-content-end">
-                <ul class="d-flex flex-column flex-md-row gap-4 list-unstyled mb-0 align-items-center align-items-md-center mt-5 mt-md-0">
-                    
-                    <li><a href="./index.html" class="page page-active text-nowrap">Home</a></li>
-                    <li><a href="./src/pages/solucoes.html" class="page text-nowrap">Solução</a></li>
-                    <li><a href="./src/pages/quemSomos.html" class="page text-nowrap">Quem Somos</a></li>
-                    <li><a href="./src/pages/faleConosco.html" class="page text-nowrap">Fale Conosco</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#paginas" aria-controls="paginas" aria-expanded="false" aria-label="Abrir menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div id="paginas" class="collapse navbar-collapse justify-content-end">
+                    <ul class="d-flex flex-column flex-md-row gap-4 list-unstyled mb-0 align-items-center align-items-md-center mt-5 mt-md-0">
+
+                        <li><a href="./index.html" class="page page-active text-nowrap">Home</a></li>
+                        <li><a href="./src/pages/solucoes.html" class="page text-nowrap">Solução</a></li>
+                        <li><a href="./src/pages/quemSomos.html" class="page text-nowrap">Quem Somos</a></li>
+                        <li><a href="./src/pages/faleConosco.html" class="page text-nowrap">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
             </div>
-
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- ==============================
-     SEÇÃO: MAIN
-     Responsável: MATHEUS e ESTEVÃO
-    ================================= -->
+         SEÇÃO: MAIN
+         Responsável: MATHEUS e ESTEVÃO
+        ================================= -->
     <main>
 
         <!-- ==============================
-        SEÇÃO: HOME
-        Responsável: MATHEUS
-        ================================= -->
+             SEÇÃO: HOME
+             Responsável: MATHEUS
+            ================================= -->
         <section>
 
         </section>
 
         <!-- ==============================
-        SEÇÃO: PROBLEMA
-        Responsável: ESTEVÃO
-        ================================= -->
+             SEÇÃO: PROBLEMA
+             Responsável: ESTEVÃO
+            ================================= -->
         <section>
 
         </section>
@@ -86,11 +86,67 @@
     </main>
 
     <!-- ==============================
-    SEÇÃO: FOOTER
-    Responsável: MATHEUS
-    ================================= -->
+         SEÇÃO: FOOTER
+         Responsável: MATHEUS
+        ================================= -->
     <footer>
+        <div class="container-fluid footer-container">
 
+            <div class="row gy-4 gx-4 justify-content-md-between">
+
+                <div class="col-12 col-md-auto footer-agrotech text-center text-md-start">
+
+                    <a href="./index.html" class="footer-logo">
+                        <span class="footer-logo-agro">Agro</span><span class="footer-logo-tech">Tech</span>
+                    </a>
+
+                    <p class="footer-texto-medio">The Future Is Now</p>
+
+                    <p class="footer-texto-fraco">Tecnologia para o pequeno&nbsp;produtor brasileiro.</p>
+
+                </div>
+
+                <div class="col-12 col-md-auto footer-navegacao-col">
+                    <nav class="footer-navegacao d-flex flex-column align-items-center align-items-md-start" aria-label="Links do rodapé">
+                        <p class="footer-titulo">NAVEGAÇÃO</p>
+                        <a href="./index.html" class="footer-navegacao-pagina footer-texto-fraco">Home</a>
+                        <a href="./src/pages/solucoes.html" class="footer-navegacao-pagina footer-texto-fraco">Solução</a>
+                        <a href="./src/pages/quemSomos.html" class="footer-navegacao-pagina footer-texto-fraco">Quem Somos</a>
+                        <a href="./src/pages/faleConosco.html" class="footer-navegacao-pagina footer-texto-fraco">Fale Conosco</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-md-auto footer-pitch text-center text-md-start">
+                    <p class="footer-pitch-titulo footer-titulo mb-3">PITCH VÍDEO</p>
+
+                    <a href="#linkDoPitch" class="footer-pitch-link d-flex align-items-center text-decoration-none justify-content-center justify-content-md-start">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <div class="d-flex flex-column text-start">
+                            <p class="footer-texto-medio mb-1 fw-bold">Assista ao nosso pitch</p>
+                            <p class="footer-texto-fraco mb-0">Conheça a navegabilidade do site</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-auto footer-equipe text-center text-md-start">
+                    <p class="footer-titulo mb-3">EQUIPE 1ESOB — FIAP 2026</p>
+                    <ul class="list-unstyled footer-texto-fraco">
+                        <li class="mb-1">Estevão Nunes Gabriel — RM571413</li>
+                        <li class="mb-1">Guilherme Silva Costa — RM573826</li>
+                        <li class="mb-1">Matheus Leite Carneiro — RM568733</li>
+                        <li class="mb-1">Pedro Corvino Gamba — RM573756</li>
+                        <li>Pietro Gonçalves Ponciano — RM570521</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row border-top mt-3 pt-3">
+                <div class="col-12 text-center text-md-start">
+                    <p class="footer-copyright footer-texto-fraco">© 2026 AgroTech · Projeto acadêmico FIAP — todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Import do JS bootstrap -->
