@@ -1,53 +1,25 @@
-function EnviaForm() {
+const formulario = document.getElementById("formulario");
+const sucesso = document.getElementById("sucesso");
+const botao = document.getElementById("btn");
 
-    let Nome = document
-        .getElementById('nome-completo')
-        .value;
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    let Email = document
-        .getElementById('email')
-        .value;
+  // Se HTML5 validar tudo
+  if (formulario.checkValidity()) {
 
-    let Mensagem = document
-        .getElementById('mensagem')
-        .value;
+    sucesso.classList.add("mostrar");
 
-    const erro = document.getElementById("erro");
+    botao.classList.add("btn-sucesso");
 
-    const form = document.getElementById("formulario");
+    setTimeout(() => {
+      botao.classList.remove("btn-sucesso");
+    }, 600);
 
-    const emailValido =
-        /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        .test(Email);
+    formulario.reset();
 
-    erro.classList.remove("hidden");
-    erro.classList.add("erro");
-
-    if (!Nome.trim().includes(" ")) {
-
-        erro.innerHTML =
-            "Digite nome e sobrenome";
-
-        return;
-    }
-
-    if (!emailValido) {
-
-        erro.innerHTML =
-            "Digite um email válido";
-
-        return;
-    }
-
-    if (Mensagem.trim() === '') {
-
-        erro.innerHTML =
-            "Digite uma mensagem";
-
-        return;
-    }
-
-    erro.classList.add("hidden");
-
-    form.submit();
-}
+    setTimeout(() => {
+      sucesso.classList.remove("mostrar");
+    }, 4000);
+  }
+});
