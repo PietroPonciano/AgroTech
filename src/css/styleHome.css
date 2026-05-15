@@ -88,58 +88,74 @@
     border: 1px solid #000;
 }*/
 
-.bruh-intro {
+.bruh-section {
     display: flex;
-    gap: 10px;
-    flex-flow: column;
-    margin-left: 6%;
-    margin-right: 4.5%;
-}
-
-.bruh-title {
-    font: var(--fonte-titulo);
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding: 2rem, 0;
-}
-
-.bruh-subtitle {
-    font: var(--fonte-titulo);
-    color: var(--cor-secundaria);
-    padding: 1.5rem, 0;
-}
-
-.bruh-section-cards {
-    margin-left: 12%;
-    margin-right: 12%;
-    height: 400px;
-    border-radius: 15px;
-    background-color: var(--cor-destaque);
-}
-
-.bruh-card{
-    display: flex;
-    flex-flow: column;
-    padding: 20px;
-    width: 250px;
-    height: 350px;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
-    border: 2px solid #000;
-    border-radius: 15px;
-    background-color: var(--cor-destaque);
+    gap: 16px;
+    flex-direction: column;
 }
 
-.bruh-card img {
-    width: 190px;
+.bruh-intro {
+    padding: 10px;
+    margin-left: 32px;
 }
 
-.bruh-card .bruh-title {
-    font-size: 1.2rem;
-    text-transform: uppercase;
+.bruh-intro h1 {
+    font-weight: 600;
+    font: var(--fonte-titulo);
+    font-size: 44px;
     color: var(--cor-texto);
 }
 
-.bruh-card p {
+.bruh-intro p {
+    font: var(--fonte-principal);
+    font-size: 0.9rem;
     color: var(--cor-secundaria);
+}
+
+.bruh-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.bruh-card {
+    background-color: var(--cor-fundo-claro);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    /*border: 1px solid #000;*/
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px #aaaa;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.bruh-card img {
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+}
+
+.bruh-card div h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.bruh-card div h2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    color: var(--cor-texto);
+}
+
+.bruh-card:hover {
+    background-color: var(--cor-hover);
+    transform: translateY(-2px);
 }
