@@ -71,7 +71,7 @@ body {
 
 /* FORM */
 
-form {
+.fale-conosco form {
   flex: 1;
 
   display: flex;
@@ -110,25 +110,29 @@ form {
   border-color: var(--cor-destaque);
 }
 
-.input-fale:invalid:not(:placeholder-shown) {
+.input-fale:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #ff6b6b;
+}
+
+.fale-conosco form.formulario-validado .input-fale:invalid {
   border-color: #ff6b6b;
 }
 
 /* LINHA (nome + email) */
 
-.linha {
+.fale-conosco .linha {
   display: flex;
   gap: 15px;
 }
 
-.linha div {
+.fale-conosco .linha div {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 /* labels */
-label {
+.fale-conosco label {
   font-family: var(--fonte-titulo);
   font-size: 14px;
 
@@ -137,18 +141,24 @@ label {
   color: var(--cor-texto);
 }
 
+.campo-obrigatorio {
+  margin-left: 0.25rem;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
 /* FILE UPLOAD */
 
-.file-upload {
+.fale-conosco .file-upload {
   flex-direction: column;
   gap: 6px;
 }
 
-.file-upload input[type="file"] {
+.fale-conosco .file-upload input[type="file"] {
   display: none;
 }
 
-.file-upload label {
+.fale-conosco .file-upload label {
   display: inline-block;
 
   padding: 10px 14px;
@@ -166,14 +176,14 @@ label {
   font-size: 14px;
 }
 
-.file-upload label:hover {
+.fale-conosco .file-upload label:hover {
   background: var(--cor-hover);
   transform: translateY(-2px);
 }
 
 /* BOTÃO */
 
-button {
+.fale-conosco button {
   padding: 12px 18px;
 
   border: none;
@@ -195,7 +205,7 @@ button {
     width: 100%;
 }
 
-button:hover {
+.fale-conosco button:hover {
   background: var(--cor-secundaria);
 
   transform: translateY(-2px);
@@ -291,9 +301,31 @@ button:hover {
 
 
 @media (max-width: 768px) {
+  .fale-conosco {
+    margin: 2rem auto;
+    padding: 2rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .fale-conosco h2 {
+    margin-bottom: 1rem;
+  }
+
   .container-form {
     flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .fale-conosco .linha {
+    flex-direction: column;
+  }
+
+  .imagem-form {
+    order: -1;
+    width: 100%;
+  }
+
+  .imagem-form img {
+    max-width: min(150px, 55vw);
   }
 }
-
-
