@@ -79,83 +79,153 @@
     color: var(--texto-branco-medio);
 }
 
-/* PROBLEMAS > Bruh Section */
-/* Responsável: ESTEVÃO */
+/* PROBLEMAS > Problema Section */
 
-/* Estilos do bruh */
+.problema-section {
+    position: relative;
+    padding: 5rem 5vw;
+    border-top: 1px solid var(--cor-borda-cinza);
+}
 
-/*div {
-    border: 1px solid #000;
-}*/
+.problema-section::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    width: 220px;
+    height: 3px;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--cor-primaria);
+    transform: translateX(-50%);
+}
 
-.bruh-section {
+.problema-container {
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
     flex-direction: column;
+    gap: 2rem;
 }
 
-.bruh-intro {
-    padding: 10px;
-    margin-left: 32px;
+.problema-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.bruh-intro h1 {
-    font-weight: 600;
-    font: var(--fonte-titulo);
-    font-size: 44px;
-    color: var(--cor-texto);
+.problema-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-family: var(--fonte-titulo);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: var(--cor-primaria);
 }
 
-.bruh-intro p {
-    font: var(--fonte-principal);
-    font-size: 0.9rem;
+.problema-intro h2 {
+    margin-bottom: 1rem;
+    font-family: var(--fonte-titulo);
+    font-size: 2.45rem;
+    font-weight: 800;
+    line-height: 1.15;
     color: var(--cor-secundaria);
 }
 
-.bruh-cards {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+.problema-intro p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--cor-texto);
 }
 
-.bruh-card {
-    background-color: var(--cor-fundo-claro);
-    display: flex;
-    flex-direction: column;
+.problema-cards {
+    margin-top: 0;
+}
+
+.problema-card {
+    min-height: 260px;
+    padding: 1.25rem 1rem;
     text-align: center;
-    width: 300px;
-    height: 350px;
-    /*border: 1px solid #000;*/
-    border-radius: 16px;
-    box-shadow: 0px 0px 12px #aaaa;
+    border: 2px solid var(--cor-borda-suave);
+    border-radius: 8px;
+    background-color: var(--texto-branco-puro);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.problema-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.problema-card-icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.problema-card:hover .problema-card-icon {
+    transform: translateY(-3px) scale(1.06) rotate(-3deg);
+    color: var(--texto-branco-puro);
+}
+
+.problema-card h3 {
+    margin-bottom: 0.75rem;
+    font-family: var(--fonte-titulo);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--cor-secundaria);
+}
+
+.problema-card p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--cor-texto);
+}
+
+.problema-fechamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.problema-fechamento p {
+    max-width: 640px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--cor-texto);
+}
+
+.problema-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    color: var(--texto-branco-puro);
+    font-weight: 700;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.bruh-card img {
-    padding: 5px;
-    width: 300px;
-    height: 150px;
-    border-radius: 16px;
-}
-
-.bruh-card div h1 {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--cor-secundaria);
-}
-
-.bruh-card div h2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 16px;
-    color: var(--cor-texto);
-}
-
-.bruh-card:hover {
-    background-color: var(--cor-hover);
+.problema-link:hover {
+    background-color: var(--cor-secundaria);
     transform: translateY(-2px);
 }

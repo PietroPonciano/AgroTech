@@ -2,11 +2,9 @@
 <html lang="pt-br">
 
 <!-- Página inicial -->
-<!-- Responsável: MATHEUS e ESTEVÃO -->
 
 <!-- ==============================
      SEÇÃO: PÁGINA INICIAL
-     Responsável: MATHEUS e ESTEVÃO
     ================================= -->
 <head>
 
@@ -32,7 +30,6 @@
 
     <!-- ==============================
          SEÇÃO: HEADER
-         Responsável: MATHEUS
         ================================= -->
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -62,13 +59,11 @@
 
     <!-- ==============================
          SEÇÃO: MAIN
-         Responsável: MATHEUS e ESTEVÃO
         ================================= -->
     <main>
 
         <!-- ==============================
              SEÇÃO: HOME (HERO)
-             Responsável: MATHEUS
             ================================= -->
         <section class="hero-section">
             <div class="row align-items-center justify-content-around gy-5 container-fluid">
@@ -111,54 +106,64 @@
 
         <!-- ==============================
              SEÇÃO: PROBLEMA
-             Responsável: ESTEVÃO
             ================================= -->
-        <section class="bruh-section">
-            <!-- Titulo -->
-            <div class="bruh-intro">
-                <h1>Caro Agricultor...</h1>
-                <p>Você, pequeno ou grande agricultor, já deve ter passado por situações onde plantar e cuidar dos animais parece mais um desafio do que um trabalho de fato. Pensando nisso, a AgroTech desenvolveu diversas formas diferentes para solucionar os problemas citados abaixo!</p>
-            </div>
+        <section class="problema-section">
+            <div class="container-fluid problema-container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9 problema-intro">
+                        <span class="problema-label">O problema</span>
+                        <h2 id="problema-title">Os desafios do pequeno agricultor</h2>
+                        <p>
+                            A agricultura familiar é essencial para o abastecimento do país, mas muitos produtores ainda
+                            precisam decidir quando plantar, colher e vender com pouca informação acessível. Na prática,
+                            isso torna cada safra mais exposta ao clima, à falta de planejamento e ao desperdício.
+                        </p>
+                    </div>
+                </div>
 
-            <!-- Cards -->
-            <div class="bruh-cards">
-                <!-- Períodos de Baixa produtividade -->
-                    <div class="bruh-card">
-                        <img src="src/img/problemasTeste.jpg" alt="KK">
-                        <div>
-                            <h1>Períodos de Baixa produtividade</h1>
-                            <h2>Identifique e analise períodos de queda na produção agrícola, permitindo ações preventivas e melhor planejamento das safras.</h2>
-                        </div>
+                <div class="row gy-4 justify-content-center problema-cards">
+                    <div class="col-12 col-md-6 col-xl-3 d-flex">
+                        <article class="problema-card w-100">
+                            <i class="bi bi-graph-down-arrow problema-card-icon"></i>
+                            <h3>Baixa produtividade</h3>
+                            <p>Sem dados simples, o produtor pode plantar na época errada e perder parte do potencial da terra.</p>
+                        </article>
                     </div>
-                <!-- Gestão da Produção -->
-                    <div class="bruh-card">
-                        <img src="src/img/problemasTeste.jpg" alt="KK">
-                        <div>
-                            <h1>Gestão da Produção</h1>
-                            <h2>Gerencie toda a cadeia produtiva com ferramentas inteligentes que otimizam recursos e maximizam a eficiência da sua propriedade.</h2>
-                        </div>
-                    </div>
-                <!-- Sustentabilidade -->
-                    <div class="bruh-card">
-                        <img src="src/img/problemasTeste.jpg" alt="KK">
-                        <div>
-                            <h1>Sustentabilidade</h1>
-                            <h2>Implemente práticas sustentáveis e monitore o impacto ambiental, garantindo produtividade com responsabilidade ecológica.</h2>
-                        </div>
-                    </div>
-                <!-- Clima -->
-                    <div class="bruh-card">
-                        <img src="src/img/problemasTeste.jpg" alt="KK">
-                        <div>
-                            <h1>Clima</h1>
-                            <h2>Implemente práticas sustentáveis e monitore o impacto ambiental, garantindo produtividade com responsabilidade ecológica.</h2>
-                        </div>
-                    </div>
-            </div>
 
-            <!-- Textos -->
-            <div>
-                
+                    <div class="col-12 col-md-6 col-xl-3 d-flex">
+                        <article class="problema-card w-100">
+                            <i class="bi bi-cloud-lightning-rain problema-card-icon"></i>
+                            <h3>Clima imprevisível</h3>
+                            <p>Secas, chuvas fortes e mudanças bruscas dificultam proteger a lavoura antes do prejuízo acontecer.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3 d-flex">
+                        <article class="problema-card w-100">
+                            <i class="bi bi-journal-text problema-card-icon"></i>
+                            <h3>Gestão manual</h3>
+                            <p>Anotações em papel tornam difícil acompanhar gastos, estoque, vendas e lucro real da produção.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3 d-flex">
+                        <article class="problema-card w-100">
+                            <i class="bi bi-wifi-off problema-card-icon"></i>
+                            <h3>Acesso limitado</h3>
+                            <p>No campo, a conexão falha e muitas ferramentas digitais são caras ou complexas para a rotina rural.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7 problema-fechamento">
+                        <p>É por isso que a AgroTech surgiu, para ajudar o produtor nos problemas que mais impactam o seu dia a dia.</p>
+                        <a href="./src/pages/solucoes.html" class="problema-link">
+                            Ver soluções
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -166,7 +171,6 @@
 
     <!-- ==============================
          SEÇÃO: FOOTER
-         Responsável: MATHEUS
         ================================= -->
     <footer>
         <div class="container-fluid footer-container">
