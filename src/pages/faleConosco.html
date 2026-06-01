@@ -68,48 +68,69 @@ Responsável: PIETRO
     Responsável: PIETRO
     ================================= -->
     <main>
+
+
+        <section class="faq-contato">
+            <h2>Perguntas Frequentes</h2>
+            <div class="perguntas-faq-contato">
+                <details>
+                    <summary>O que é a AgroTech?</summary>
+                    <p>A AgroTech é uma plataforma voltada para soluções no agronegócio.</p>
+                </details>
+
+                <details>
+                    <summary>Como posso entrar em contato?</summary>
+                    <p>Você pode acessar a página de contato ou enviar um e-mail para suporte@agrotech.com.</p>
+                </details>
+
+                <details>
+                    <summary>Os serviços são pagos?</summary>
+                    <p>Oferecemos planos gratuitos e pagos, dependendo da necessidade.</p>
+                </details>
+
+                <details>
+                    <summary>Posso usar no celular?</summary>
+                    <p>Sim, a plataforma é totalmente responsiva.</p>
+                </details>
+            </div>
+        </section>
+
+
         <section class="fale-conosco">
             <h2>Fale Conosco</h2>
 
             <div class="container-form">
 
-                <form id="formulario">
-
-                    <div class="linha">
-
-                        <div>
-                            <label for="nome-completo">Nome Completo:<span class="campo-obrigatorio" aria-hidden="true">*</span></label>
-
-                            <input type="text" class="input-fale" placeholder="Ex: João Gomes" id="nome-completo"
-                                required minlength="3">
-                        </div>
-
-                        <div>
-                            <label for="email">E-mail:<span class="campo-obrigatorio" aria-hidden="true">*</span></label>
-
-                            <input type="email" class="input-fale" placeholder="example@gmail.com" id="email" required>
-                        </div>
-
+                <form id="formContato" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome">
+                        <div class="invalid-feedback"></div>
                     </div>
 
-                    <div>
-                        <label for="mensagem">Mensagem:<span class="campo-obrigatorio" aria-hidden="true">*</span></label>
-
-                        <textarea class="input-fale" rows="4" id="mensagem" placeholder="Digite sua mensagem" required minlength="10"
-                            maxlength="500"></textarea>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                        <div class="invalid-feedback"></div>
                     </div>
 
-                    <div class="file-upload">
-                        <label for="arquivo"><i class="bi bi-cloud-arrow-up"></i> Anexar Arquivo:</label>
-                        <input type="file" id="arquivo">
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Descrição da mensagem</label>
+                        <textarea class="form-control" id="mensagem" maxlength="500" rows="5">
+</textarea>
+
+                        <small id="contadorMensagem">
+                            0 / 500 caracteres
+                        </small>
+                        <div class="invalid-feedback"></div>
                     </div>
 
-                    <button type="submit" id="btn" class="fale-conosco-btn">Enviar</button>
-
-                    <p id="sucesso" class="mensagem-sucesso">
-                        Mensagem enviada com sucesso! <i class="bi bi-leaf"></i>  
-                    </p>
-
+                    <button type="submit" class="btn btn-success">
+                        Enviar
+                    </button>
+                    <div class="mensagem-sucesso">
+                        Mensagem enviada com sucesso! Entraremos em contato em breve.
+                    </div>
                 </form>
                 <div class="imagem-form">
                     <img src="../img/fale-conosco-icon-lateral.png" alt="Contato">
