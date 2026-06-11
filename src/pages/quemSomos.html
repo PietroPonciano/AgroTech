@@ -28,6 +28,7 @@ Responsável: PEDRO
     <!-- Import do CSS global e da pagina-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleQuemSomos.css">
+    <link rel="stylesheet" href="../css/styleConsultor.css">
 
 
 </head>
@@ -185,10 +186,35 @@ Responsável: PEDRO
 
         </div>
     </footer>
+
+    <!-- Consultor AgroTech -->
+    <section class="consultor" aria-label="Consultor AgroTech">
+        <button class="consultor__botao" type="button" aria-label="Abrir Consultor AgroTech" aria-expanded="false">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span class="consultor__notificacao" aria-hidden="true"></span>
+        </button>
+
+        <button class="consultor__chamada" type="button">Descubra sua solução ideal</button>
+
+        <div class="consultor__painel" aria-hidden="true">
+            <div class="consultor__cabecalho">
+                <div>
+                    <span class="consultor__label">Diagnóstico rápido</span>
+                    <h2 class="consultor__titulo">Consultor AgroTech</h2>
+                </div>
+                <button class="consultor__fechar" type="button" aria-label="Fechar Consultor AgroTech">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="consultor__conteudo" data-consultor-conteudo></div>
+        </div>
+    </section>
+
     <!-- Import do JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="../js/scriptConsultor.js"></script>
 
 </body>
 

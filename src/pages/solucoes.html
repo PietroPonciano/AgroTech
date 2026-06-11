@@ -28,6 +28,7 @@ Responsável: GUILHERME
     <!-- Import do CSS global e da pagina-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleSolucoes.css">
+    <link rel="stylesheet" href="../css/styleConsultor.css">
      
 </head>
 <body>
@@ -74,7 +75,7 @@ Responsável: GUILHERME
         <section class="solucoes__cards">
             
             <!-- CARD 1: PLANTIO INTELIGENTE -->
-            <article class="solucoes__card">
+            <article class="solucoes__card" data-solucao="plantio">
                 <img 
                 class="solucoes__card-image" 
                 src="../img/solucao-card-1.png" 
@@ -90,7 +91,7 @@ Responsável: GUILHERME
             </article>
 
             <!-- CARD 2: MONITORAMENTO CLIMÁTICO -->
-            <article class="solucoes__card">
+            <article class="solucoes__card" data-solucao="clima">
                 <img 
                 class="solucoes__card-image" 
                 src="../img/solucao-card-2.png" 
@@ -106,7 +107,7 @@ Responsável: GUILHERME
             </article>
 
             <!-- CARD 3: GESTÃO DA PRODUÇÃO -->
-            <article class="solucoes__card">
+            <article class="solucoes__card" data-solucao="gestao">
                 <img 
                 class="solucoes__card-image" 
                 src="../img/solucao-card-3.png" 
@@ -122,7 +123,7 @@ Responsável: GUILHERME
             </article>
 
             <!-- CARD 4: RECOMENDAÇÕES SUSTENTÁVEIS -->
-            <article class="solucoes__card">
+            <article class="solucoes__card" data-solucao="sustentabilidade">
                 <img 
                 class="solucoes__card-image" 
                 src="../img/solucao-card-4.png" 
@@ -205,7 +206,31 @@ Responsável: GUILHERME
         </div>
     </footer>
 
+    <!-- Consultor AgroTech -->
+    <section class="consultor" aria-label="Consultor AgroTech">
+        <button class="consultor__botao" type="button" aria-label="Abrir Consultor AgroTech" aria-expanded="false">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span class="consultor__notificacao" aria-hidden="true"></span>
+        </button>
+
+        <button class="consultor__chamada" type="button">Descubra sua solução ideal</button>
+
+        <div class="consultor__painel" aria-hidden="true">
+            <div class="consultor__cabecalho">
+                <div>
+                    <span class="consultor__label">Diagnóstico rápido</span>
+                    <h2 class="consultor__titulo">Consultor AgroTech</h2>
+                </div>
+                <button class="consultor__fechar" type="button" aria-label="Fechar Consultor AgroTech">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="consultor__conteudo" data-consultor-conteudo></div>
+        </div>
+    </section>
+
  <!-- Import do JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/scriptConsultor.js"></script>
 </body>
 </html>
