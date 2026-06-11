@@ -1,194 +1,152 @@
-/* Style da Seção QUEM SOMOS da página inicial */
+/* ==============================
+   Página Quem Somos
+============================== */
 
-/* Deve ser referenciado ao quemSomos.html */
+/* Container principal */
 
-/* Lembre sempre de conferir o CSS GLOBAL 'style.css' */
-
-/* QUEM SOMOS > Seção de Apresentação da Equipe e Missão do Projeto */
-/* Responsável: PEDRO */
-
-
-.historia-section {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
-
-.somos-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;  /* 50% texto + 50% imagem */
-    gap: 80px;
-    flex-direction: column;
-}
-
-/* === TEXTO === */
-.content {
-    max-width: 100%;
-}
-
-.content h1 {
-    font-size: 3.4rem;
-    color: var(--cor-secundaria);
-    margin-bottom: 30px;
-}
-
-.content p {
-    font-size: 1.22rem;
-    line-height: 1.7;
-    color: #222;
-    margin-bottom: 28px;
-}
-
-/* === IMAGEM === */
-.historia-imagem img {
+.quem-somos__container {
     width: 100%;
-    height: auto;
-    border-radius: 20px;
-    border: 5px solid #005f7a;           /* Borda grossa teal */
-    box-shadow: 12px 12px 0px #005f7a,   /* Sombra lateral característica */
-                0 20px 40px rgba(0, 0, 0, 0.15);
-    display: block;
+    min-width: 0;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 3rem 5vw;
 }
 
-/* Responsivo */
-@media (max-width: 992px) {
-    .container {
-        grid-template-columns: 1fr;   /* Empilha no celular */
-        gap: 50px;
-    }
-    
-    .content h1 {
-        font-size: 2.8rem;
-    }
+/* Cabeçalho da seção */
+
+.quem-somos__intro {
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
-  .container {
+.quem-somos__intro-title {
+    margin-bottom: 1rem;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--cor-secundaria);
+}
+
+.quem-somos__intro-description {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: var(--fonte-principal);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--cor-texto);
+    overflow-wrap: break-word;
+}
+
+/* Conteúdo / cards */
+
+.quem-somos__story {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  .content {
-    padding-left: 0;
-  }
-  .image-side {
-    position: relative;
-    top: 0;
-  }
-}
-/* Seção 4 - Z Pattern */
-.section4 {
-  padding: 140px 80px;
-  background: #f7f7f7;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-/* Título */
-.section4 h2 {
-  text-align: center;
-  margin-bottom: 120px;
-  color: #0f3a1f;
-  font-size: 3rem;
+.quem-somos__story-card {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 2px solid var(--cor-borda-suave);
+    border-radius: 1.5rem;
+    background-color: var(--texto-branco-puro);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Container */
-.solution-container {
-  max-width: 1300px;
-  margin: 0 auto;
+.quem-somos__story-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* Blocos */
-.z-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  align-items: center;
-  margin-bottom: 180px;
+.quem-somos__story-card p {
+    margin-bottom: 1rem;
+    font-family: var(--fonte-principal);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--cor-texto);
+    overflow-wrap: break-word;
 }
 
-/* Card de texto */
-.z-text {
-  background: white;
-  padding: 50px;
-  border-radius: 24px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-  transition: 0.3s;
+.quem-somos__story-card p:last-child {
+    margin-bottom: 0;
 }
 
-.z-text:hover {
-  transform: translateY(-8px);
+.quem-somos__story-card strong {
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    color: var(--cor-secundaria);
 }
 
-/* Texto quando está na ESQUERDA */
-.z-block:not(.reverse) .z-text {
-  text-align: left;
-}
-
-/* Texto quando está na DIREITA */
-.z-block.reverse .z-text {
-  text-align: right;
-  order: 2;
-}
-
-.z-block.reverse .z-image {
-  order: 1;
-}
-
-/* Títulos */
-.z-text h3 {
-  font-size: 2.4rem;
-  color: #14532d;
-  margin-bottom: 25px;
-  line-height: 1.3;
-}
-
-/* Parágrafo */
-.z-text p {
-  font-size: 1.2rem;
-  line-height: 1.9;
-  color: #444;
+.quem-somos__story-final {
+    padding: 1rem;
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: 8px;
+    background-color: var(--cor-hover-azul);
 }
 
 /* Imagens */
-.z-image img {
-  width: 100%;
-  border-radius: 24px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
-  transition: 0.4s;
+
+.quem-somos__image-wrapper {
+    margin: 0;
 }
 
-.z-image img:hover {
-  transform: scale(1.03);
+.quem-somos__image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    box-shadow: 6px 6px 0 var(--cor-secundaria);
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
+/* Responsividade */
 
-  .section4 {
-    padding: 100px 25px;
-  }
+@media (min-width: 768px) {
+    .quem-somos__container {
+        padding: 3.5rem 5vw 4.5rem;
+    }
 
-  .z-block {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    margin-bottom: 100px;
-  }
+    .quem-somos__intro {
+        margin-bottom: 2.25rem;
+    }
 
-  .z-block.reverse .z-text,
-  .z-block:not(.reverse) .z-text {
-    text-align: left;
-    order: unset;
-  }
+    .quem-somos__story {
+        gap: 2rem;
+    }
 
-  .z-block.reverse .z-image {
-    order: unset;
-  }
+    .quem-somos__story-card {
+        padding: 1.5rem;
+    }
 
-  .z-text {
-    padding: 35px;
-  }
+    .quem-somos__story-card p {
+        font-size: 1rem;
+    }
+}
 
-  .z-text h3 {
-    font-size: 2rem;
-  }
+@media (min-width: 992px) {
+    .quem-somos__story {
+        grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+    }
+
+    .quem-somos__story-card {
+        padding: 2rem;
+    }
+
+    .quem-somos__image {
+        height: 100%;
+        min-height: 30rem;
+        aspect-ratio: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .quem-somos__story-card,
+    .quem-somos__story-final {
+        padding: 1rem;
+    }
 }
