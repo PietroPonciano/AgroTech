@@ -70,7 +70,10 @@ form.addEventListener("submit", (e) => {
 
     mensagemSucesso.classList.add("mostrar");
 
-    form.reset();
+    form.reset(); 
+
+    // Reinicia o contador
+    contador.textContent = "0 / 500 caracteres";
 
     setTimeout(() => {
       mensagemSucesso.classList.remove("mostrar");
