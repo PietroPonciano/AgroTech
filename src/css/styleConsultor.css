@@ -223,6 +223,10 @@
     color: var(--cor-secundaria);
 }
 
+.consultor__acao--secundaria:hover {
+    color: var(--texto-branco-puro);
+}
+
 /* Resultado */
 
 .consultor__resultado-titulo {
