@@ -263,6 +263,125 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+/* FAQ CONTATO */
+
+.faq-contato {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+
+    animation: fadeUp 0.8s ease;
+}
+
+.faq-contato h2 {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: var(--cor-secundaria);
+
+    position: relative;
+}
+
+.faq-contato h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+
+    background: var(--cor-primaria);
+
+    display: block;
+    margin: 10px auto 0;
+
+    border-radius: 10px;
+}
+
+.perguntas-faq-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.perguntas-faq-contato details {
+    background: white;
+
+    border: 1px solid var(--cor-borda-cinza);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: all 0.25s ease;
+}
+
+.perguntas-faq-contato details:hover {
+    border-color: var(--cor-primaria);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(5, 155, 154, 0.15);
+}
+
+.perguntas-faq-contato details[open] {
+    border-color: var(--cor-primaria);
+}
+
+.perguntas-faq-contato summary {
+    list-style: none;
+
+    padding: 18px 20px;
+
+    cursor: pointer;
+
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+
+    position: relative;
+
+    transition: all 0.25s ease;
+}
+
+.perguntas-faq-contato summary::-webkit-details-marker {
+    display: none;
+}
+
+.perguntas-faq-contato summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--cor-primaria);
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.perguntas-faq-contato details[open] summary::after {
+    content: "−";
+}
+
+.perguntas-faq-contato p {
+    padding: 0 20px 20px;
+
+    color: var(--cor-texto);
+
+    line-height: 1.6;
+
+    animation: fadeDown 0.3s ease;
+}
+
 /* ANIMAÇÕES */
 
 @keyframes fadeUp {
@@ -299,6 +418,7 @@ body {
   100% { transform: translateY(0); }
 }
 
+/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
   .fale-conosco {
@@ -328,4 +448,21 @@ body {
   .imagem-form img {
     max-width: min(150px, 55vw);
   }
+}
+
+
+@media (max-width: 768px) {
+    .faq-contato {
+        margin: 2rem auto;
+        padding: 2rem 1.25rem;
+        border-radius: 16px;
+    }
+
+    .faq-contato h2 {
+        margin-bottom: 1rem;
+    }
+
+    .perguntas-faq-contato summary {
+        font-size: 0.95rem;
+    }
 }

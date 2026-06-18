@@ -28,6 +28,7 @@ Responsável: PEDRO
     <!-- Import do CSS global e da pagina-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleQuemSomos.css">
+    <link rel="stylesheet" href="../css/styleConsultor.css">
 
 
 </head>
@@ -49,7 +50,8 @@ Responsável: PEDRO
                 </button>
 
                 <div id="paginas" class="collapse navbar-collapse justify-content-end">
-                    <ul class="d-flex flex-column flex-lg-row gap-4 list-unstyled mb-0 align-items-center align-items-lg-center mt-5 mt-lg-0">
+                    <ul
+                        class="d-flex flex-column flex-lg-row gap-4 list-unstyled mb-0 align-items-center align-items-lg-center mt-5 mt-lg-0">
                         <li><a href="../../index.html" class="page text-nowrap">Home</a></li>
                         <li><a href="./solucoes.html" class="page text-nowrap">Soluções</a></li>
                         <li><a href="./quemSomos.html" class="page page-active text-nowrap">Quem Somos</a></li>
@@ -65,57 +67,57 @@ Responsável: PEDRO
     SEÇÃO: MAIN
     Responsável: PEDRO
     ================================= -->
-    <main>
-        <!-- Seção Única: História Completa -->
-  <section class="historia-section">
-    <div class="somos-container">
-      <div class="content">
-        <div class="texto">
-        <h1>Nossa História</h1>
-        
-        <p class="intro">
-          Tudo começou em 2023, no interior de Minas Gerais.
-        </p>
+    <main class="quem-somos__container">
+        <section class="quem-somos__intro">
+            <h1 class="quem-somos__intro-title">Nossa História</h1>
+            <p class="quem-somos__intro-description">
+                Tudo começou em 2023, no interior de Minas Gerais.
+            </p>
+        </section>
 
-        <p>
-          Eu estava visitando a pequena propriedade do meu tio, como fazia todos os anos. 
-          Enquanto tomávamos café na varanda simples da casa de tijolos, ele me mostrou o velho caderno 
-          onde anotava tudo: quando plantar, quanto adubo usar, as contas da colheita...
-        </p>
+        <section class="quem-somos__story">
+            <article class="quem-somos__story-card">
+                <p>
+                    Eu estava visitando a pequena propriedade do meu tio, como fazia todos os anos.
+                    Enquanto tomávamos café na varanda simples da casa de tijolos, ele me mostrou o velho
+                    caderno
+                    onde anotava tudo: quando plantar, quanto adubo usar, as contas da colheita...
+                </p>
 
-        <p>
-          Foi ali que eu realmente enxerguei a realidade. Vi um homem que acorda antes do sol, 
-          trabalha o dia inteiro debaixo de chuva ou de sol escaldante, mas ainda depende da sorte 
-          para não perder tudo. Uma chuva fora de hora, uma seca prolongada ou uma geada inesperada 
-          podia destruir meses de trabalho e deixar a família inteira em dificuldade.
-        </p>
+                <p>
+                    Foi ali que eu realmente enxerguei a realidade. Vi um homem que acorda antes do sol,
+                    trabalha o dia inteiro debaixo de chuva ou de sol escaldante, mas ainda depende da sorte
+                    para não perder tudo. Uma chuva fora de hora, uma seca prolongada ou uma geada inesperada
+                    podia destruir meses de trabalho e deixar a família inteira em dificuldade.
+                </p>
 
-        <p>
-          Naquele dia, percebi algo poderoso: <strong>o celular já havia chegado ao campo</strong>. 
-          Quase todos os produtores tinham um no bolso. Eles usavam para falar com a família, 
-          ver o preço da saca e até assistir vídeos no YouTube. Mas a tecnologia que realmente 
-          poderia ajudá-los — planejamento inteligente, alertas climáticos precisos e gestão simples — 
-          ainda era coisa de grande fazenda.
-        </p>
+                <p>
+                    Naquele dia, percebi algo poderoso: <strong>o celular já havia chegado ao campo</strong>.
+                    Quase todos os produtores tinham um no bolso. Eles usavam para falar com a família,
+                    ver o preço da saca e até assistir vídeos no YouTube. Mas a tecnologia que realmente
+                    poderia ajudá-los — planejamento inteligente, alertas climáticos precisos e gestão simples —
+                    ainda era coisa de grande fazenda.
+                </p>
 
-        <p>
-          Voltei para casa com uma sensação de injustiça e, ao mesmo tempo, com uma ideia forte no peito. 
-          Decidimos criar algo diferente: um assistente agrícola digital simples, bonito, barato e 
-          feito especialmente para o pequeno produtor brasileiro.
-        </p>
+                <p>
+                    Voltei para casa com uma sensação de injustiça e, ao mesmo tempo, com uma ideia forte no
+                    peito.
+                    Decidimos criar algo diferente: um assistente agrícola digital simples, bonito, barato e
+                    feito especialmente para o pequeno produtor brasileiro.
+                </p>
 
-        <p class="final">
-          Assim nasceu a <strong>AgroTech</strong>.<br>
-          Não para grandes corporações. <br>
-          <strong>Mas para quem planta com as próprias mãos e alimenta o Brasil todos os dias.</strong>
-        </p>
-        </div>
-         <div class="historia-imagem">
-        <img src="../img/agricultor.png" alt="Agricultor no campo">
-    </div>
-  </div>
-    </div>
-  </section>
+                <p class="quem-somos__story-final">
+                    Assim nasceu a <strong>AgroTech</strong>.<br>
+                    Não para grandes corporações. <br>
+                    <strong>Mas para quem planta com as próprias mãos e alimenta o Brasil todos os
+                        dias.</strong>
+                </p>
+            </article>
+
+            <figure class="quem-somos__image-wrapper">
+                <img class="quem-somos__image" src="../img/agricultor.png" alt="Agricultor no campo">
+            </figure>
+        </section>
     </main>
 
     <!-- ==============================
@@ -185,10 +187,35 @@ Responsável: PEDRO
 
         </div>
     </footer>
+
+    <!-- Consultor AgroTech -->
+    <section class="consultor" aria-label="Consultor AgroTech">
+        <button class="consultor__botao" type="button" aria-label="Abrir Consultor AgroTech" aria-expanded="false">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span class="consultor__notificacao" aria-hidden="true"></span>
+        </button>
+
+        <button class="consultor__chamada" type="button">Descubra sua solução ideal</button>
+
+        <div class="consultor__painel" aria-hidden="true">
+            <div class="consultor__cabecalho">
+                <div>
+                    <span class="consultor__label">Diagnóstico rápido</span>
+                    <h2 class="consultor__titulo">Consultor AgroTech</h2>
+                </div>
+                <button class="consultor__fechar" type="button" aria-label="Fechar Consultor AgroTech">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="consultor__conteudo" data-consultor-conteudo></div>
+        </div>
+    </section>
+
     <!-- Import do JS bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="../js/scriptConsultor.js"></script>
 
 </body>
 

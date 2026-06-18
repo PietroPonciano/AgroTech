@@ -162,6 +162,8 @@
 }
 
 .problema-card-icon {
+    position: relative;
+    overflow: hidden;
     width: 3.25rem;
     height: 3.25rem;
     margin-bottom: 1rem;
@@ -172,12 +174,31 @@
     background-color: var(--cor-primaria);
     color: var(--cor-texto);
     font-size: 1.4rem;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .problema-card:hover .problema-card-icon {
-    transform: translateY(-3px) scale(1.06) rotate(-3deg);
+    animation: iconBounce 0.6s ease forwards;
+    background-color: var(--cor-secundaria);
     color: var(--texto-branco-puro);
+}
+
+@keyframes iconBounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    35% {
+        transform: translateY(-6px) scale(1.12) rotate(-6deg);
+    }
+
+    70% {
+        transform: translateY(2px) scale(0.98) rotate(3deg);
+    }
+
+    100% {
+        transform: translateY(-3px) scale(1.06) rotate(-3deg);
+    }
 }
 
 .problema-card h3 {
